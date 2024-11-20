@@ -56,8 +56,7 @@ head=deleteatpos(head,4);
 traversal(head);
 
 }
-//OR
-/*
+
 // C++ function to delete a node at a specific position
 Node* deleteAtPosition(Node* head, int position)
 {

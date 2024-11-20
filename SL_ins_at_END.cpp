@@ -10,6 +10,8 @@ next = NULL;
 };
 void insertatend(node* head,int new_data){
 node* new_node = new node(new_data);
+  if (head == nullptr) 
+        return new_node;
 node* curr = head;
 
 while(curr->next!=NULL){
