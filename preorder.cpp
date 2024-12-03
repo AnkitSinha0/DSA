@@ -10,15 +10,16 @@ left = nullptr;
 right = nullptr;
 }
 };
-void inordertraverse(node* root){
+void preordertraverse(node* root){
 if(root == nullptr){
     return;
 }
-inordertraverse(root->left);
 
 cout<<root->data<<"  ";
+preordertraverse(root->left);
 
-inordertraverse(root->right);
+
+preordertraverse(root->right);
 }
 int main(){
 node* root = new node(1);
@@ -29,7 +30,7 @@ root->left->right = new node(5);
 root->right->left = new node(6);
 root->right->right = new node(7);
 
-inordertraverse(root);
+preordertraverse(root);
 
 
 }

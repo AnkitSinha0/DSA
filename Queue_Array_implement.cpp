@@ -23,7 +23,7 @@ if(r == cap-1){
 }
 
 int Dequeue(){
-if(r == -1){
+if(f > r){
     cout<<"underflow"<<endl;
     return 0;
 }else{
