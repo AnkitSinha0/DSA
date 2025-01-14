@@ -9,7 +9,7 @@ int Merge(int a[],int left,int mid ,int right){
 
    for(int i=0 ; i < n1 ; i++){
     L[i] = a[left+i];
-   }
+   } 
    for(int j=0 ; j < n2 ; j++){
     R[j] = a[mid+j+1];
    }
@@ -23,25 +23,22 @@ int Merge(int a[],int left,int mid ,int right){
         else {
             a[k] = R[j];
             j++;
+ 
         }
         k++;
     }
-
-    // Copy the remaining elements of L[], if any
     while (i < n1) {
         a[k] = L[i];
         i++;
         k++;
     }
 
-    // Copy the remaining elements of R[], if any
     while (j < n2) {
         a[k] = R[j];
         j++;
         k++;
     }
 
-    // Free the dynamically allocated memory
     delete[] L;
     delete[] R;
 

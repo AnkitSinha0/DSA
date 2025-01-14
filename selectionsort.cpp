@@ -9,7 +9,7 @@ void selectionsort(int arr[],int n){
             }
         }
                 swap(arr[i], arr[min_cur]);
-    }   7
+    }   
 
 
 }
